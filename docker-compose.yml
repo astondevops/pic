@@ -23,10 +23,12 @@ services:
             - "50000:50000"
         volumes:
             - /home/formateur/data:/var/jenkins_home 
+        links: 
+          - gitlab
+
     gitlab:
         image: gitlab/gitlab-ce:8.9.6-ce.0
         restart: always
-        hostname: '0.0.0.0'
         environment:
            GITLAB_OMNIBUS_CONFIG: |
             # external_url 'https://gitlab.example.com'
