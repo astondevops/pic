@@ -1,0 +1,4019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="510" it="0" lt="509" ct="242" ts="1480504781693" s="true" lb="landing page /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3340" sby="442" ng="1" na="1">
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : Pas de Calcul&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508381##436f839c17bff8423aebbfa9414eee7f4c328301&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<sample t="510" it="166" lt="509" ct="242" ts="1480504781544" s="true" lb="transaction controller 1 /" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="3340" sby="442" ng="1" na="1">
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="34" it="0" lt="26" ct="22" ts="1480504782235" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1321" ng="1" na="1">
+  <httpSample t="26" it="0" lt="26" ct="22" ts="1480504782235" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="715" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="7" it="0" lt="6" ct="1" ts="1480504782262" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.43&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.43&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="12" it="0" lt="5" ct="2" ts="1480504782272" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1343" ng="1" na="1">
+  <httpSample t="6" it="0" lt="5" ct="2" ts="1480504782272" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="737" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="6" it="0" lt="6" ct="1" ts="1480504782278" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.72&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.72&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="11" it="0" lt="5" ct="1" ts="1480504782287" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1345" ng="1" na="1">
+  <httpSample t="6" it="0" lt="5" ct="1" ts="1480504782287" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="739" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="5" it="0" lt="5" ct="1" ts="1480504782293" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.23&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.23&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="12" it="0" lt="5" ct="1" ts="1480504782301" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1346" ng="1" na="1">
+  <httpSample t="5" it="0" lt="5" ct="1" ts="1480504782301" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="740" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="5" it="0" lt="5" ct="1" ts="1480504782308" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="28" it="0" lt="28" ct="1" ts="1480504782315" s="false" lb="Post calculation /" rc="500" rm="INTERNAL SERVER ERROR" tn="Thread Group 1-1" dt="text" by="2389" sby="736" ng="1" na="1">
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Flasky - Internal Server Error&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;Internal Server Error&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="10" it="0" lt="5" ct="1" ts="1480504782344" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1344" ng="1" na="1">
+  <httpSample t="5" it="0" lt="5" ct="1" ts="1480504782344" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="738" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="4" it="0" lt="4" ct="1" ts="1480504782350" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 5.02&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 5.02&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="9" it="0" lt="4" ct="1" ts="1480504782356" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1345" ng="1" na="1">
+  <httpSample t="4" it="0" lt="4" ct="1" ts="1480504782356" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="739" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="4" it="0" lt="4" ct="0" ts="1480504782361" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="9" it="0" lt="4" ct="1" ts="1480504782366" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1346" ng="1" na="1">
+  <httpSample t="4" it="0" lt="4" ct="1" ts="1480504782366" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="740" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="4" it="0" lt="4" ct="0" ts="1480504782371" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.76&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.76&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508382##41b8cb5512250787fbd0ee4ab8bb2481c2859928&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+
+<httpSample t="241" it="0" lt="241" ct="52" ts="1480504965068" s="true" lb="landing page /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3340" sby="442" ng="1" na="1">
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : Pas de Calcul&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<sample t="241" it="70" lt="241" ct="52" ts="1480504965013" s="true" lb="transaction controller 1 /" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="3340" sby="442" ng="1" na="1">
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="21" it="0" lt="10" ct="5" ts="1480504965326" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1321" ng="1" na="1">
+  <httpSample t="11" it="0" lt="10" ct="5" ts="1480504965326" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="715" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="8" it="0" lt="7" ct="1" ts="1480504965339" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.43&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.43&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="16" it="0" lt="6" ct="2" ts="1480504965351" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1343" ng="1" na="1">
+  <httpSample t="6" it="0" lt="6" ct="2" ts="1480504965351" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="737" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="9" it="0" lt="9" ct="1" ts="1480504965358" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.72&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.72&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="15" it="0" lt="6" ct="1" ts="1480504965375" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1345" ng="1" na="1">
+  <httpSample t="6" it="0" lt="6" ct="1" ts="1480504965375" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="739" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="8" it="0" lt="8" ct="1" ts="1480504965382" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.23&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.23&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="14" it="0" lt="7" ct="1" ts="1480504965393" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1346" ng="1" na="1">
+  <httpSample t="7" it="0" lt="7" ct="1" ts="1480504965393" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="740" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="5" it="0" lt="5" ct="0" ts="1480504965402" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="12" it="0" lt="11" ct="1" ts="1480504965409" s="false" lb="Post calculation /" rc="500" rm="INTERNAL SERVER ERROR" tn="Thread Group 1-1" dt="text" by="2389" sby="736" ng="1" na="1">
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Flasky - Internal Server Error&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;Internal Server Error&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="16" it="0" lt="6" ct="1" ts="1480504965422" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1344" ng="1" na="1">
+  <httpSample t="6" it="0" lt="6" ct="1" ts="1480504965422" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="738" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="9" it="0" lt="9" ct="0" ts="1480504965429" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 5.02&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 5.02&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="20" it="0" lt="12" ct="2" ts="1480504965440" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1345" ng="1" na="1">
+  <httpSample t="12" it="0" lt="12" ct="2" ts="1480504965440" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="739" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="8" it="0" lt="7" ct="1" ts="1480504965452" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="25" it="0" lt="11" ct="2" ts="1480504965462" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" sby="1346" ng="1" na="1">
+  <httpSample t="11" it="0" lt="11" ct="2" ts="1480504965462" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" sby="740" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="12" it="0" lt="11" ct="1" ts="1480504965475" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" sby="606" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.76&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.76&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480508565##24466b84817fd1f2e05189cfc27b4653bba4c22d&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+
+</testResults>
