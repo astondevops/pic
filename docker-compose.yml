@@ -6,7 +6,7 @@ services:
         container_name: web_flask
         ports:
             - "5000:5000"
-        command: ["-h=0.0.0.0"]
+        command: ["-h=51.255.211.239"]
     jmeter:
         image : astondevops/docker-jmeter
         container_name: jmeter_web_flask
@@ -22,7 +22,7 @@ services:
             - "8080:8080"
             - "50000:50000"
         volumes:
-            - /home/formateur/data:/var/jenkins_home 
+            - ${HOME}/data:/var/jenkins_home 
         links: 
           - gitlab
 
