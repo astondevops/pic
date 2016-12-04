@@ -6,23 +6,26 @@ services:
         container_name: web_flask
         ports:
             - "5000:5000"
-        command: ["-h=51.255.211.239"]
+        command: ["-h=0.0.0.0"]
     jmeter:
         image : astondevops/docker-jmeter
         container_name: jmeter_web_flask
         volumes:
-            - ./results:/results
+            - ${HOME}/results:/results
         command: ["-H", "web", "-P", "5000"]
         links:
             - web
     jenkins:
-        image: jenkins:alpine
+        build: .
+        container_name: sudo_jenkins
         hostname: localhost
         ports:
             - "8080:8080"
             - "50000:50000"
         volumes:
-            - ${HOME}/data:/var/jenkins_home 
+            - ${HOME}/data:/var/jenkins_home
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /usr/bin/docker:/usr/bin/docker
         links: 
           - gitlab
 
