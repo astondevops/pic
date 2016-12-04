@@ -44,5 +44,3 @@ services:
         - /opt/gitlab/config:/etc/gitlab
         - /opt/gitlab/logs:/var/log/gitlab
         - /opt/gitlab/data:/var/opt/gitlab
-
-
